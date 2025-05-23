@@ -1,0 +1,17 @@
+import Link from 'next/link'
+
+export default function Home() {
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center p-8 bg-gray-50">
+      <h1 className="text-5xl font-bold mb-4">Welcome to Rewrdly</h1>
+      <p className="mb-6 text-gray-700 max-w-xl text-center">
+        The easiest way for professionals to track referrals and reward clients.
+      </p>
+      <Link href="/login">
+        <a className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+          Log In / Sign Up
+        </a>
+      </Link>
+    </main>
+  )
+}
